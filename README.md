@@ -1,4 +1,4 @@
-# bootcampAssignments
+# AMV Bootcamp Assignments
 ## Maven
 ### Assignment
 
