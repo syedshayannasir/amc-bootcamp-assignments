@@ -1,21 +1,38 @@
-# AMV Bootcamp Assignments
-## Maven
+# AMC Bootcamp Assignments
+## OSGI
 ### Assignment
 
 
-#### Questions
+##### Questions
 
-1. Create a non maven project and add use log4j for logging.
+1. Create service ClassConfigurationService that allows two configuration :
 
-2. Create a maven project and use log4j for logging.
+- No. of students allowed in the class
 
-3. Create a maven project using an archetype(multimodule).
+- marks required by the student to pass the class
 
-4. Explain different tags (plugins, dependency, parent, profile, properties, modules and project related(i.e. modelVersion, groupId, artifactId, packaging, version, description)) of POM file created using archetype.
+also it exposes two methods :
 
-5. Demonstrate the inheritance and aggregation of POM.
+- isClassLimitReached(List)  // returns true if the list size is less than the configured allowed size
 
-6. Point out the differences between Gradle and Maven.
+- getPassingMarks()   // returns the passing marks required
 
-7. What is the purpose of mvn clean install and its usage in the project.
-	
+ 
+
+2. Create another service StudentClassService that maintains the list of students in the class and make use of ClassConfigurationService and exposes the following methods :
+
+- addStudent(student values)
+
+- deleteStudent(id)
+
+- isStudentPassed(id)
+
+- getStudent(id)
+
+- getAllStudents()
+
+#### Note: 
+
+- A student may have id,name , marks obtained,age etc
+
+- Access the service and print a students information.
