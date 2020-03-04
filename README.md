@@ -1,4 +1,4 @@
-# AMV Bootcamp Assignments
+# AMC Bootcamp Assignments
 ## Maven
 ### Assignment
 
