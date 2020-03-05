@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Custom font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <title>Registration Form</title>
   </head>
   <body>
@@ -24,122 +29,58 @@
       <div class="col col-md-4 col-sm-10 mx-4">
         <div class="card card-outline-secondary">
           <div class="card-header bg-grey py-2">
-            <h3 class="font-weight-bold text-white mt-3">Bug Report</h3>
+            <h3 class="font-weight-bold text-white mt-3">Registration</h3>
           </div>
-          <form class="form">
+
+          <form class="form" method="POST" action="registration">
+
             <div class="card-body">
+
               <div class="form-group">
-                <label for="name">Name:*</label>
+                <label for="email">Email:*</label>
                 <input
-                  class="form-control"
-                  pattern="\w+ \w+.*"
+                  class="form-control validate"
                   required="required"
                   type="text"
-                  name="name"
+                  name="email"
                 />
               </div>
               <div class="form-group">
-                <label for="desc">Description:*</label>
-                <textarea
-                  required
-                  class="form-control"
-                  name="desc"
-                  rows="3"
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <label for="os">Operating System:</label>
-                <select class="form-control bg-teal text-white" name="os">
-                  <option value="01">
-                    Windows XP
-                  </option>
-                  <option value="02">
-                    Windows &
-                  </option>
-                  <option value="03">
-                    Linux
-                  </option>
-                  <option value="04">
-                    MacOS
-                  </option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="product">Product:*</label>
-                <select
-                  required
-                  class="form-control bg-teal text-white"
-                  name="product"
-                >
-                  <option value="01">
-                    Formoid
-                  </option>
-                  <option value="02">
-                    CMS
-                  </option>
-                  <option value="03">
-                    Application
-                  </option>
-                </select>
-              </div>
-              <div class="row form-group">
-                <div class="col col-4">
-                  <label for="version">Version:*</label>
+                  <label for="username">Username:*</label>
                   <input
-                    required
-                    type="text"
-                    name="version"
                     class="form-control"
+                    required="required"
+                    type="text"
+                    name="username"
                   />
-                </div>
-              </div>
-              <label>License:</label>
-              <div class="row form-group">
-                <div class="col col-6">
-                  <div class="radio">
-                    <label><input type="radio" /> Free</label>
-                  </div>
-                </div>
-                <div class="col col-6">
-                  <div class="radio">
-                    <label><input type="radio" /> Business</label>
-                  </div>
-                </div>
-              </div>
+               </div>
 
               <div class="form-group">
-                <label for="severe">Severity:</label>
-                <select class="form-control bg-teal text-white" name="severe">
-                  <option value="01">
-                    Critical
-                  </option>
-                  <option value="02">
-                    Moderate
-                  </option>
-                  <option value="03">
-                    Minor
-                  </option>
-                </select>
-              </div>
-              <label for="file">Attachments:</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" />
-                <label class="custom-file-label">No File Selected</label>
-              </div>
+                  <label for="password">Password:*</label>
+                  <input
+                    class="form-control"
+                    required="required"
+                    type="password"
+                    name="password"
+                  />
+               </div>
             </div>
+
             <div class="card-footer py-1 pt-3">
+
               <div class="form-group row">
                 <div class="col-md-12">
                   <button
-                    class="btn btn float-right bg-teal text-white"
+                    class="btn float-right bg-teal text-white"
                     type="submit"
                   >
                     Submit
                   </button>
                 </div>
               </div>
+
             </div>
+
           </form>
         </div>
       </div>

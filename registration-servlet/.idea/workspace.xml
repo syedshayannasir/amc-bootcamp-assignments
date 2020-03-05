@@ -7,6 +7,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +32,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,23 +54,32 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1302" height="164" key="GridCell.Tab.0.bottom" timestamp="1583430750588">
+    <state x="491" y="97" width="374" height="595" key="#com.intellij.ide.util.MemberChooser" timestamp="1583435186721">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1302" height="164" key="GridCell.Tab.0.bottom/0.24.1366.744@0.24.1366.744" timestamp="1583430750588" />
-    <state width="1302" height="164" key="GridCell.Tab.0.center" timestamp="1583430750588">
+    <state x="491" y="97" width="374" height="595" key="#com.intellij.ide.util.MemberChooser/0.24.1366.744@0.24.1366.744" timestamp="1583435186721" />
+    <state x="466" y="151" width="424" height="487" key="FileChooserDialogImpl" timestamp="1583439375844">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1302" height="164" key="GridCell.Tab.0.center/0.24.1366.744@0.24.1366.744" timestamp="1583430750588" />
-    <state width="1302" height="164" key="GridCell.Tab.0.left" timestamp="1583430750588">
+    <state x="466" y="151" width="424" height="487" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1583439375844" />
+    <state width="1302" height="164" key="GridCell.Tab.0.bottom" timestamp="1583439377760">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1302" height="164" key="GridCell.Tab.0.left/0.24.1366.744@0.24.1366.744" timestamp="1583430750588" />
-    <state width="1302" height="164" key="GridCell.Tab.0.right" timestamp="1583430750588">
+    <state width="1302" height="164" key="GridCell.Tab.0.bottom/0.24.1366.744@0.24.1366.744" timestamp="1583439377760" />
+    <state width="1302" height="164" key="GridCell.Tab.0.center" timestamp="1583439377759">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
-    <state width="1302" height="164" key="GridCell.Tab.0.right/0.24.1366.744@0.24.1366.744" timestamp="1583430750588" />
+    <state width="1302" height="164" key="GridCell.Tab.0.center/0.24.1366.744@0.24.1366.744" timestamp="1583439377759" />
+    <state width="1302" height="164" key="GridCell.Tab.0.left" timestamp="1583439377759">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="1302" height="164" key="GridCell.Tab.0.left/0.24.1366.744@0.24.1366.744" timestamp="1583439377759" />
+    <state width="1302" height="164" key="GridCell.Tab.0.right" timestamp="1583439377760">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="1302" height="164" key="GridCell.Tab.0.right/0.24.1366.744@0.24.1366.744" timestamp="1583439377760" />
   </component>
 </project>
