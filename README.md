@@ -11,7 +11,7 @@
 
 - marks required by the student to pass the class
 
-		also it exposes two methods :
+	also it exposes two methods :
 
 
 
