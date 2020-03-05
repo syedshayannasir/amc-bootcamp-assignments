@@ -1,7 +1,9 @@
 package services.impl;
 
 import bean.Student;
+import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 import services.ClassConfigurationService;
 import services.StudentClassService;
@@ -12,9 +14,10 @@ import java.util.List;
 @Component(service = StudentClassService.class)
 public class StudentClassServiceImpl implements StudentClassService {
 
-    int count;
+    // studentList hold objects of Student class
     List<Student> studentList = new ArrayList<Student>();
 
+    // Calling via Reference ClassConfigurationService
     @Reference
     ClassConfigurationService classConfigurationService;
 
@@ -22,7 +25,6 @@ public class StudentClassServiceImpl implements StudentClassService {
 
         if(!classConfigurationService.isClassLimitReached(studentList)){
             studentList.add(new Student(id, name, marks, age));
-            count++;
         } else {
             System.out.println("Class Limit reached. Can't add more students to class");
         }
@@ -46,10 +48,23 @@ public class StudentClassServiceImpl implements StudentClassService {
     }
 
     public void getAllStudents() {
-        System.out.println("List of all student");
         for (Student student : studentList) {
             System.out.println(student);
         }
-
     }
+
+    @Activate
+    void activate(){
+        System.out.println("...Student class service started...");
+    }
+
+    @Deactivate
+    void deactivate(){
+        System.out.println("...Student class service stopped...");
+    }
+
+    public void unexposedMethod(){
+        System.out.println("This method is not exposed");
+    }
+
 }
