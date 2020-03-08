@@ -44,4 +44,5 @@ The order (priority) in which the scripts will be called is:
 
 
 #### Note
-The sling node hierarchy specified in the question is available as a zip package in 'sling-assignment-package' directory
+- The sling node hierarchy specified in the question is available as a zip package in 'sling-assignment-package' directory
+- https://sling.apache.org/downloads.cgi ***Link to sling self-runnable starter jar***
