@@ -1,48 +1,38 @@
 # AMC Bootcamp Assignments
-## REST Architecture and Java Servlet
-### Assignment
+
+### Maven and OSGI Assessment
 
 
-##### Question
+1. Using Sling's Maven archetype, generate a Sling Maven Project. (You'll need to find the artifact id and group id for the latest version of the Sling archetype)
+2. Deploy the project bundle using the already created maven profile autoInstallBundle. (You need to find how to pass a profile param to the maven command)
+3. Create 2 services:
 
+	1. TechBlogConfig: Contains the following configurations:
+		a) Blog Category: Defaults to 'Technology' (String)
+		b) Rank: Defaults to 1 (Integer)
+
+	2) TechBlog: 
+		a) Logs the message "TechBlog started" as soon as the current service is active.
+		b) Fetches the configurations from the TechBlogConfig
+		c) Contains a non-static method "getBlogCategory()" that returns the name of the current blog category.
+		c) Contains a non-static method 'getRank()' that returns the configured rank
+
+	3) MarketBlogConfig: Contains the following configurations:
+		a) Blog Category: Defaults to 'Marketing' (String)
+		b) Rank: Defaults to 2 (Integer)
+
+	2) MarketBlog: 
+		a) Logs the message "MarketBlog started" as soon as the current service is active
+		b) Fetches the configurations from the MarketBlogConfig
+		c) Contains a non-static method "getBlogCategory()" that returns the name of the current blog category.
+		d) Contains a non-static method 'getRank()' that returns the configured rank
+
+	3) BlogsCollector: As soon as this service is active:
+		a) Log the message "BlogsCollector".
+		b) Calls the 'getBlogCategory()' and 'getRank()' methods created above and logs the returned values for each of the above blog services.
 	
-Ques. Taking up a list of potential scripts for a request to a resource whose sling:resource type is example/sample and the request selectors are "print.a4" and the request extension is "html". What would be the order in which these scripts would be called ?
-
-0. GET.jsp
-
-1. sample.jsp
-
-2. html.jsp
-
-3. print.jsp
-
-4. print.html.jsp
-
-5. print/a4.jsp
-
-6. print/a4/html.jsp 
-
-7. print/a4.html.jsp
-
-
-#### Answer
-
-The order (priority) in which the scripts will be called is:
-
-1. print/a4.html.js	- ***(selector)selector + extension***
-2. print/a4/html.jsp - ***(selector)node name + extension***
-3. print/a4.jsp - ***(selector)selector***
-4. print.html.jsp - ***selector + extension***
-5. print.jsp - ***selector***
-6. html.jsp - ***extension***
-7. sample.jsp - ***node name***
-8. GET.jsp - ***default GET priority***
-
-
-**Reference Priority: selector+extension > selector > extension > node name > GET/POST**
 
 
 
-#### Note
-- The sling node hierarchy specified in the question is available as a zip package in 'sling-assignment-package' directory
-- https://sling.apache.org/downloads.cgi ***Link to sling self-runnable starter jar***
+Please zip your log files and the complete project and submit it to your mentors.
+
