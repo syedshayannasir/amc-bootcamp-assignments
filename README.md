@@ -16,7 +16,8 @@
     * The component should have two tabs: 1. Select Logo 2. Logo Information
     * Logo Information tab should have only Alternative text and Link as fields.
     * Display Logo on the page accordingly.
-** Note: No need to add extra fields or tab. Develop this component by using resourceMerger properties only. **
+
+**Note: No need to add extra fields or tab. Develop this component by using resourceMerger properties only.**
 
 4. Apply dialog validations making field1 as required and field2 should have atleast 6 characters , otherwise throw an error “ field2 should have atleast 6 characters” .(not required)
 
@@ -25,4 +26,5 @@
 #### Note
 - Both the code base and package from crx is included in the repository
 - The componentGroup of the components is 'customComponents'
-- The above created components are located in 'ComponentDay2/ui.apps/src/main/content/jcr_root/apps/ComponentDay2/components/custom'
+- The above created components are located in 
+```ComponentDay2/ui.apps/src/main/content/jcr_root/apps/ComponentDay2/components/custom```
