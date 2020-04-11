@@ -1,30 +1,27 @@
 # AMC Bootcamp Assignments
-## Components Day 2
+## Templates Assignment
 ### Assignment
 
 
 ##### Question
 
-1. For each of component you will create, make sure you are having actions and listeners accordingly.
+ 	
+1. Create a template from custom template type.
 
-2. Using /apps/core/wcm/components/image , create your component using overriding and with component group of your name.
-    * Add an extra tab in the extended component and name it “Size”.
-    * Hide “Metadata” tab that is already present. 
-    * Add properties  height and width in “Size” tab and  display image on page accordingly. 
+2. Create two templates T1 and T2 such that T1 is only allowed under hierarchy “/content/my-site/us” and T2 is only allowed under “/content/my-site/fr”
 
-3. Create a new component name Logo and extend only it’s dialog from /apps/core/wcm/components/image. 
-    * The component should have two tabs: 1. Select Logo 2. Logo Information
-    * Logo Information tab should have only Alternative text and Link as fields.
-    * Display Logo on the page accordingly.
+3. Add a component on a template such that the content (authored properties) of the component remains exactly same on all the pages created using that template.
 
-**Note: No need to add extra fields or tab. Develop this component by using resourceMerger properties only.**
+4. Add a parsys (responsive grid/layout container) in the above template such that author can add any component from group “General” on the page.
 
-4. Apply dialog validations making field1 as required and field2 should have atleast 6 characters , otherwise throw an error “ field2 should have atleast 6 characters” .(not required)
+5. Define a component in such a way that content remains same on all pages created using a common template and the authored content can be reused on other templates as well without any re-authoring of the content.
 
 
 
-#### Note
-- Both the code base and package from crx is included in the repository
-- The componentGroup of the components is 'customComponents'
-- The above created components are located in 
-```ComponentDay2/ui.apps/src/main/content/jcr_root/apps/ComponentDay2/components/custom```
+#### Note concerning answers
+- Templates T1 and T2 are created based on the requirements of Ques1
+- Custom Template type has a default company name component
+- The Article component (in initial content) 'ques 3 and 4' template is created based on the requirements of ques 3
+- The Image-HTL component has been given a custom policy called 'customImagePolicy' that suffices the requirements of ques5
+- If in case Image-HTL component isn't available under 	/libs/foundation/components/image, a package is with the components is added in the repository
+
