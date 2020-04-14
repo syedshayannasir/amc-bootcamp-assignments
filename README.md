@@ -1,21 +1,13 @@
 # amc-bootcamp-assignments
-### HTL Assignment
+### Sling PostServlet
 
 #### Questions
-1. Print current time.
-2. Create a list of resources under /content/my-options and add two properties "text" and "value" on each resource. Create a dropdown (HTMl select) using the resources list as options.
-3. Read the color property from the current node and set it as the backgorund of the page.
-4. Add the dropdown created in Q-2 under two different containers (div tag) with different background colors.
+1. Create a servlet and register it by path.
+2. Create a sling servlet to list out all the blogs in such a way so that we can display the blogs along with creation date and sort it by date in either way, (both option should be there to sort in ascending and descending order).
 
 #### Answers (links)
-1. Current time: http://localhost:8080/content/HTLAssignment.q1.html
-2. Dropdown: http://localhost:8080/content/HTLAssignment.q2.html
-3. Applying color properties: 
-    * http://localhost:8080/my-options/option1.q3.html
-    * http://localhost:8080/my-options/option2.q3.html
-    * http://localhost:8080/my-options/option3.q3.html
-    * http://localhost:8080/my-options/option4.q3.html
-4. Rendered page: http://localhost:8080/my-options/option1.q4.html
+1. http://localhost:8080/libs/path-servlet
+2. http://localhost:8080/libs/sorted-phones
 
 #### Note
 The assignment was done on sling(as advised) and not AEM.
