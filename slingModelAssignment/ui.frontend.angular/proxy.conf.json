@@ -1,5 +1,0 @@
-{
-  "auth": "admin:admin",
-  "context": ["/content/**/*", "/etc.clientlibs/**/*", "/libs/**/*"],
-  "target": "http://localhost:4502"
-}
