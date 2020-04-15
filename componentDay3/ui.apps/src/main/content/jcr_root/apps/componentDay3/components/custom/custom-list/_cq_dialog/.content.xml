@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <settings
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accessibility
+                                jcr:description="Moved accessibility tab under settings tab as per requirement of ques 3"
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="listFrom"
+                                sling:resourceSuperType="/libs/wcm/foundation/components/list/cq:dialog/content/items/accessibility"
+                                sling:resourceType="granite/ui/components/foundation/section">
+                            </accessibility>
+                            <pagination
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="limit"
+                                min="{Long}2"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="accessibility"
+                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"/>
+                        </items>
+                    </column>
+                </items>
+            </settings>
+        </items>
+    </content>
+</jcr:root>
