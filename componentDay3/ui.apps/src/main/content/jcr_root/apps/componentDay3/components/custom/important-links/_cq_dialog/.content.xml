@@ -58,24 +58,25 @@
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                                             name="link"
                                                             fieldLabel="Link"
+                                                            fieldDescription="Please either select path from browser or provide a complete link (e.g https://www.google.com/)"
                                                             rootPath="/content"/>
-                                                        <openIn
+                                                        <openInNewTab
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                            name="openIn"
-                                                            fieldLabel="Open Link in">
+                                                            name="linkTarget"
+                                                            fieldLabel="Open Link in new tab?">
                                                             <items
                                                                 jcr:primaryType="nt:unstructured">
                                                                 <sameTab
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    text="Same Tab"
-                                                                    value="sameTab" />
+                                                                    text="Yes"
+                                                                    value="_blank" />
                                                                 <newTab
                                                                     jcr:primaryType="nt:unstructured"
-                                                                    text="New Tab"
-                                                                    value="newTab" />
+                                                                    text="No"
+                                                                    value="" />
                                                             </items>
-                                                        </openIn>
+                                                        </openInNewTab>
                                                     </items>
                                                 </field>
                                             </links>
