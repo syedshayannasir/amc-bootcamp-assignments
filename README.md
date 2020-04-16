@@ -50,3 +50,10 @@ _Mr Abc Def_
 _25_
 
 
+
+#### Note
+* Please find attached 'answer(screenshot).png' showing the screenshot of the required result
+* Custom created component placed inside 
+```ui.apps/.../components/custom/MyDetail```
+
+
