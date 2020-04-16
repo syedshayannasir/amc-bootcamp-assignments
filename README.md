@@ -27,8 +27,11 @@ Note: Read Resource resolver API and Resource API to cheeck if a link is AEM int
 
 
 #### Note
-* Custom components created(or extended) for the above are 'custom-list' and 'important-links'. Both of these belong to the componentGroup: 'customComponents'
-* Java logic handling URL for question2 is written inside URLHandler.java inside core/models/
+* Custom components created(or extended) for the above are 'custom-list' and 'important-links'. Both of these belong to the componentGroup - 'customComponents' and are present under:
+```ComponentDay2/ui.apps/src/main/content/jcr_root/apps/ComponentDay2/components/custom```
+
+* Java logic handling URL for question2 is written inside URLHandler.java inside 
+```core/models/```
 
 
 
