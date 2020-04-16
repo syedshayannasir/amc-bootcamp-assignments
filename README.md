@@ -55,5 +55,7 @@ _25_
 * Please find attached 'answer(screenshot).png' showing the screenshot of the required result
 * Custom created component placed inside 
 ```ui.apps/.../components/custom/MyDetail```
+* Custom created sling model is placed inside
+```core/src/main/java/..../models/DetailGeneratorModel.java```
 
 
