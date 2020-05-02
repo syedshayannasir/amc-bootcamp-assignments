@@ -1,0 +1,11 @@
+<!--/*
+    Component modified as part of wknd-part-1 exercise.
+*/-->
+<div class="cmp-helloworld" data-sly-use.hello="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+    <h3 data-sly-test="${hello.upperCaseText}">${hello.greeting} ${hello.upperCaseText}</h3>
+
+    <pre data-sly-use.hello="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+        HelloWorldModel says:
+        ${hello.message}
+    </pre>
+</div>

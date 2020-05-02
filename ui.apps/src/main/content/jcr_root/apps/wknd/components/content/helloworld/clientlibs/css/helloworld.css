@@ -1,0 +1,8 @@
+.cmp-helloworld {
+    border: 1px solid #d5d5d5;
+    padding: 10px;
+    margin: 10px;
+}
+.cmp-helloworld h3 {
+    color: teal;
+}
